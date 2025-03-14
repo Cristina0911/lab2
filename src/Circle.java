@@ -5,8 +5,13 @@ public class Circle extends Form{
         super();
         this.radius = 0;
     }
-    public Circle(String color, float radius){
+    public Circle(float radius, String color){
         super(color);
         this.radius = radius;
+    }
+
+    @Override
+    public float getArea(){
+        return (float) (radius * Math.PI);
     }
 }

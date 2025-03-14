@@ -7,7 +7,7 @@ public class Triangle extends Form{
         this.base = 0;
     }
 
-    public Triangle(String color,float height, float base){
+    public Triangle(float height, float base,String color){
         super(color);
         this.height = height;
         this.base = base;
@@ -17,8 +17,19 @@ public class Triangle extends Form{
     public float getArea(){
         return (height * base)/2;
     }
+
     @Override
     public String toString(){
         return super.toString() + "\nHeight: " + height + "\nBase: " + base;
     }
+
+    @Override
+    public boolean equals(Object obj){
+        if(obj instanceof Triangle t){
+            return this.base==t.base && this.height==t.height && t.getColor().equals(this.getColor());
+        }
+        return false;
+    }
+
+
 }

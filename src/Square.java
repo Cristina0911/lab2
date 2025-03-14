@@ -5,7 +5,7 @@ public class Square extends Form{
         super();
         this.side=0;
     }
-    public Square(String color,float side){
+    public Square(float side, String color){
         super(color);
         this.side=side;
     }
