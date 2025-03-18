@@ -12,5 +12,11 @@ public class Application {
         System.out.println("Triangle2 equals to Triangle1: " + tri.equals(tri2));
         Triangle tri3 = new Triangle(1.1F, 2.0F, "brown");
         System.out.println("Triangle3 equals to Triangle1: " + tri.equals(tri3));
+
+        Form f1=new Form();
+        Form f2=new Form();
+        Form f3=new Form();
+
+        System.out.println("Instante create:" + Form.getCounter());
     }
 }
