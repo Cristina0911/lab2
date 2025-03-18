@@ -1,3 +1,5 @@
+package ro.ulbs.paradigme.lab2.api;
+
 public class Application {
     public static void main(String[] args) {
         Triangle tri = new Triangle(1.1F, 2.0F, " red");
